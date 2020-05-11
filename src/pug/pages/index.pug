@@ -34,8 +34,35 @@ block content
                 .row.justify-content-center
                     .col-xl-8.col-lg-10.text-center(data-aos='fade')
                         h1.page-header-title { Academia do Programador }
-                        p.page-header-text.mb-5 As inscrições ainda não estão liberadas! Espere um pouco mais ...
+                        p.page-header-text.mb-5 Com a { Academia do Programador } você sairá do zero e realizará o sonho de se tornar um programador profissional em menos de 6 meses.
+                        p.page-header-text.mb-5 Você vai seguir um caminho bem definido, focado em te transformar em um programador com uma excelente base técnica.
                         
+                        a.btn.btn-primary.btn-marketing.btn-block.rounded-pill.mt-4(href="https://pay.hotmart.com/A5013488A") Garanta a sua vaga!
+
+
+
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-light',
+        pageHeaderStyle: 'page-header-light',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: true,
+        svgBorderFill: 'text-dark'
+    })
+
+        .page-header-content
+            .container
+                .row.justify-content-center
+                    .col-xl-8.col-lg-10.text-center(data-aos='slide-left')
+                        h1.page-header-title Conheça o instrutor!
+                        img.avatar-lp(src='/assets/img/foto-gustavo.jpg')
+                        p.page-header-text.mb-5 <strong>Gustavo Furtado</strong> é Mestre em Computação Aplicada, Engenheiro da Computação, criador do blog { Dicas de Programação } por onde já passaram mais de 3 milhões de pessoas, em sua maioria iniciantes em programação.
+                        p.page-header-text.mb-5 Tem mais de 15 anos de experiência como desenvolvedor de softwares, tendo trabalhado com diversas linguagens de programação, frameworks, tecnicas e metodologias.
+                        a.btn.btn-primary.btn-marketing.btn-block.rounded-pill.mt-4(href="https://pay.hotmart.com/A5013488A") Quero trilhar este caminho!
+                        
+
+          
                 
 
 
