@@ -44,6 +44,12 @@ append css
             width: 100%;
             height: 100%;
         }
+        .title {
+            padding-top: 2rem;
+        }
+        .timer {
+            max-width: 100%;
+        }
 
 block content
 
@@ -65,7 +71,10 @@ block content
             .container
                 .row.justify-content-center
                     .col-xl-9.col-lg-10.text-center(data-aos='fade')
-                        h1.page-header-title Inscrições abertas para a <br/>{ Academia do Programador }
+                        h2.page-header-text O desconto de até R$ 240,00 termina em:
+                        img.timer(src="https://s.mmgo.io/t/BwQV/scale_2x")
+                        
+                        h1.page-header-title.title Inscrições abertas para a <br/>{ Academia do Programador }
                         h2.page-header-text Torne-se um programador profissional em até seis meses e seja disputado pelo mercado, mesmo que você nunca tenha feito um algorítmo na vida.
 
                         .video
@@ -74,6 +83,7 @@ block content
 
                         //a.btn.btn-xl.btn-secondary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=nc94kftr&checkoutMode=10&split=12&bid=1589319974564") Sim, vou garantir a minha vaga!
                         a.btn.btn-xl.btn-secondary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=fplj7erg&checkoutMode=10&split=12&bid=1589319974564") Sim, vou garantir a minha vaga COM DESCONTO!
+
 
 
 
