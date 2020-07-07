@@ -161,7 +161,7 @@ block content
         svgBorderAngled: true,
         svgBorderRounded: false,
         svgBorderWaves: false,
-        svgBorderFill: 'text-white'
+        svgBorderFill: 'text-dark'
     })
 
         .page-header-content.mb-n5
@@ -188,12 +188,12 @@ block content
 
     include mixins/header.pug
     +header({
-        pageHeaderBg: 'bg-white',
-        pageHeaderStyle: 'page-header-white',
+        pageHeaderBg: 'bg-dark',
+        pageHeaderStyle: 'page-header-dark',
         svgBorderAngled: false,
         svgBorderRounded: true,
         svgBorderWaves: false,
-        svgBorderFill: 'text-light'
+        svgBorderFill: 'text-white'
     })
 
         .page-header-content
@@ -212,12 +212,12 @@ block content
 
     include mixins/header.pug
     +header({
-        pageHeaderBg: 'bg-light',
-        pageHeaderStyle: 'page-header-light',
+        pageHeaderBg: 'bg-white',
+        pageHeaderStyle: 'page-header-white',
         svgBorderAngled: false,
         svgBorderRounded: true,
         svgBorderWaves: false,
-        svgBorderFill: 'text-dark'
+        svgBorderFill: 'text-light'
     })
 
         .page-header-content
@@ -231,45 +231,46 @@ block content
                         a.card.text-center.text-decoration-none.h-100.lift(href='#!')
                             .card-body.py-5
                                 .icon-stack.icon-stack-lg.bg-green-soft.text-green.mb-4
-                                    i(data-feather='help')
+                                    i(data-feather='help-circle')
                                 h5 Aula tira-dúvidas TODA SEMANA
-                                p.card-text.small Toda semana você terá acesso a uma aula tira-dúvidas para você não ficar travado em nenhum ponto da jornada.
+                                p.card-text Toda semana você terá acesso a uma aula tira-dúvidas para você não ficar travado em nenhum ponto da jornada.
                     .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='100')
                         a.card.text-center.text-decoration-none.h-100.lift(href='#!')
                             .card-body.py-5
                                 .icon-stack.icon-stack-lg.bg-red-soft.text-red.mb-4
                                     i(data-feather='slack')
                                 h5 Comunidade de alunos no Slack
-                                p.card-text.small Uma comunidade de alunos que estão no mesmo barco que você. "Se quer ir longe vá acompanhado"
+                                p.card-text Uma comunidade de alunos que estão no mesmo barco que você. "Se quer ir longe vá acompanhado"
                     .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='150')
                         a.card.text-center.text-decoration-none.h-100.lift(href='#!')
                             .card-body.py-5
                                 .icon-stack.icon-stack-lg.bg-yellow-soft.text-yellow.mb-4
                                     i(data-feather='map')
                                 h5 Acompanhamento individual
-                                p.card-text.small Você terá um acompanhamento individual do seu progresso. Assim você não ficará disperso e saberá exatamente o único próximo passo.
+                                p.card-text Você terá um acompanhamento individual do seu progresso. Assim você não ficará disperso e saberá exatamente o único próximo passo.
                     .col-lg-4.col-md-6.mb-5.mb-lg-0(data-aos='fade-up')
                         a.card.text-center.text-decoration-none.h-100.lift(href='#!')
                             .card-body.py-5
                                 .icon-stack.icon-stack-lg.bg-purple-soft.text-purple.mb-4
                                     i(data-feather='user-check')
                                 h5 Consultoria individual
-                                p.card-text.small Você terá direito a no mínimo 1 hora de consultoria individual com o professor pra você perguntar o que quiser.
+                                p.card-text Você terá direito a no mínimo 1 hora de consultoria individual com o professor pra você perguntar o que quiser.
                     .col-lg-4.col-md-6.mb-5.mb-md-0(data-aos='fade-up', data-aos-delay='100')
                         a.card.text-center.text-decoration-none.h-100.lift(href='#!')
                             .card-body.py-5
                                 .icon-stack.icon-stack-lg.bg-blue-soft.text-blue.mb-4
                                     i(data-feather='award')
                                 h5 Certificado
-                                p.card-text.small Ao final do curso você receberá um certificado de conclusão, comprovando que você trilho toda a jornada.
+                                p.card-text Ao final do curso você receberá um certificado de conclusão, comprovando que você trilho toda a jornada.
                     .col-lg-4.col-md-6(data-aos='fade-up', data-aos-delay='150')
                         a.card.text-center.text-decoration-none.h-100.lift(href='#!')
                             .card-body.py-5
                                 .icon-stack.icon-stack-lg.bg-orange-soft.text-orange.mb-4
                                     i(data-feather='package')
                                 h5 Acesso vitalício
-                                p.card-text.small Você terá acesso vitalício ao material da Academia do Programador
-                                i(data-feather='alert-triangle') Somente para esta turma!
+                                p.card-text Você terá acesso vitalício ao material da Academia do Programador
+                                i(data-feather='alert-triangle')
+                                p.card-text.small.text-orange Somente para esta turma!
 
 
 
@@ -279,8 +280,8 @@ block content
 
     include mixins/header.pug
     +header({
-        pageHeaderBg: 'bg-dark',
-        pageHeaderStyle: 'page-header-dark',
+        pageHeaderBg: 'bg-light',
+        pageHeaderStyle: 'page-header-light',
         svgBorderAngled: false,
         svgBorderRounded: false,
         svgBorderWaves: true,
@@ -301,6 +302,28 @@ block content
                    
 
 
+
+
+    //- include mixins/header.pug
+    //- +header({
+    //-     pageHeaderBg: 'bg-light',
+    //-     pageHeaderStyle: 'page-header-light',
+    //-     svgBorderAngled: false,
+    //-     svgBorderRounded: true,
+    //-     svgBorderWaves: false,
+    //-     svgBorderFill: 'text-dark'
+    //- })
+
+
+    //-     .page-header-content
+    //-         .container
+    //-             .row.justify-content-center
+    //-                 .col-xl-8.col-lg-10.text-center(data-aos='slide-up')
+    //-                     h1.page-header-title Tire todas as suas dúvidas
+
+    //-                 .col-xl-10.col-lg-10
+
+                        
 
 
 
