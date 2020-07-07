@@ -138,15 +138,15 @@ block content
 
                     .col-xl-8.col-lg-10(data-aos='slide-up')
 
-                        p.page-header-text Você pode até achar que precisaria aprender várias linguagens de programação, C, C++, Java, C#, PHP, Assembly, estruturas de dados complexas, padrões de projetos, arquitetura, etc.
+                        p.page-header-text Você pode até achar que precisaria aprender várias linguagens de programação, como: C, C++, Java, C#, PHP, Assembly, estruturas de dados complexas, padrões de projetos, arquitetura, etc.
 
                         p.page-header-text Se você tem esse pensamento, sinto muito, dificilmente você se tornará um programador mesmo. Pois você ficará cada vez mais perdido e não conseguirá trilhar um caminho claro para se tornar um programador.
 
-                        p.page-header-text Mas se você quer um caminho otimizado que torna possível você se tornar um programador apto a conseguir um emprego no mercado de trabalho, dando um passo de cada vez.
+                        p.page-header-text Mas se você quer um caminho otimizado que torna possível você se tornar um programador apto a conseguir um emprego no mercado de trabalho, você precisa aprender a dar um passo de cada vez.
 
-                        p.page-header-text Com rota que vamos trilhar, o ambiente de comunidade onde todos se ajudam e o suporte que você vai receber, você será capaz de sair do ZERO e se tornar um programador profissional no menor tempo.
+                        p.page-header-text Você será capaz de sair do ZERO e se tornar um programador profissional no menor tempo se utilizar a rota que vamos trilhar, em um ambiente de comunidade onde todos se ajudam e o suporte que você vai receber durante a { Academia do Programador }.
 
-                        p.page-header-text Depois você pode até aprender as outras linguagens, frameworks, e outras coisa da moda. 😉
+                        p.page-header-text Depois que você construir uma base sólida, você pode até aprender as outras linguagens, frameworks, e as coisa da moda. Mas esquece isso no início da sua jornada. 😉
 
 
                         a.btn.btn-xl.btn-secondary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=nc94kftr&checkoutMode=10&split=12&bid=1589319974564") Sim, vou garantir a minha vaga AGORA!
@@ -215,9 +215,9 @@ block content
         pageHeaderBg: 'bg-white',
         pageHeaderStyle: 'page-header-white',
         svgBorderAngled: false,
-        svgBorderRounded: true,
+        svgBorderRounded: false,
         svgBorderWaves: false,
-        svgBorderFill: 'text-light'
+        svgBorderFill: ''
     })
 
         .page-header-content
@@ -273,6 +273,9 @@ block content
                                 p.card-text.small.text-orange Somente para esta turma!
 
 
+                    a.btn.btn-xl.btn-secondary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=nc94kftr&checkoutMode=10&split=12&bid=1589319974564") Sim, quero me tornar um programador!
+                    //- a.btn.btn-xl.btn-primary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=fplj7erg&checkoutMode=10&split=12&bid=1589319974564") Sim, quero me tornar um programador!
+                
 
 
 
@@ -280,12 +283,12 @@ block content
 
     include mixins/header.pug
     +header({
-        pageHeaderBg: 'bg-light',
-        pageHeaderStyle: 'page-header-light',
+        pageHeaderBg: 'bg-gradient-primary-to-secondary',
+        pageHeaderStyle: 'page-header-dark',
         svgBorderAngled: false,
         svgBorderRounded: false,
         svgBorderWaves: true,
-        svgBorderFill: 'text-dark'
+        svgBorderFill: 'text-light'
     })
 
         .page-header-content
@@ -297,36 +300,68 @@ block content
                         p.page-header-text.mb-5 <strong>Gustavo Furtado</strong> é Mestre em Computação Aplicada, Engenheiro da Computação, criador do blog { Dicas de Programação } por onde já passaram mais de 3 milhões de pessoas, em sua maioria iniciantes em programação.
                         p.page-header-text.mb-5 Tem mais de 15 anos de experiência como desenvolvedor de softwares, tendo trabalhado com diversas linguagens de programação, frameworks, tecnicas e metodologias.
                         
+
+
+
+
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-light',
+        pageHeaderStyle: 'page-header-light',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-dark'
+    })
+
+
+        .page-header-content
+            .container
+                .row.justify-content-center
+                    .col-xl-8.col-lg-10.text-center(data-aos='slide-up')
+                        h1.page-header-title Dúvidas frequentes
+
+
+                .row.justify-content-center   
+                    .col-xl-8.col-lg-10.text-center(data-aos='slide-up')                       
+                        #helpAccordion.accordion.accordion-faq.mb-5
+                            .card.accordion-faq-item
+                                a#helpHeadingOne.card-header(data-toggle='collapse', data-target='#helpCollapseOne', aria-expanded='true', aria-controls='helpCollapseOne', href='javascript:void(0);')
+                                    .accordion-faq-item-heading
+                                        | Porque linguagens como C, Java, Python, C++, PHP, C#, etc. não estão na rota?
+                                        i(data-feather='chevron-down').accordion-faq-item-heading-arrow
+                                #helpCollapseOne.collapse.show(aria-labelledby='helpHeadingOne', data-parent='#helpAccordion')
+                                    .card-body.border-bottom
+                                        | Porque você precisa de foco para criar uma base sólida como programador, para aí sim estar apto a aprender qualquer uma dessas linguagens ou frameworks.
+                            .card.accordion-faq-item
+                                a#helpHeadingTwo.card-header.collapsed(data-toggle='collapse', data-target='#helpCollapseTwo', aria-expanded='true', aria-controls='helpCollapseTwo', href='javascript:void(0);')
+                                    .accordion-faq-item-heading
+                                        | Tenho mais de 50 anos. A { Academia do Programador } serve pra mim?
+                                        i(data-feather='chevron-down').accordion-faq-item-heading-arrow
+                                #helpCollapseTwo.collapse(aria-labelledby='helpHeadingTwo', data-parent='#helpAccordion')
+                                    .card-body.border-bottom
+                                        | Com certeza! É justamente porque você tem mais de 50 anos que você deve aprender programação seguindo os passos da academia do programador, pois você não tem mais tempo à perder se dispersando com todo o conteúdo disponível na internet.
+                            .card.accordion-faq-item
+                                a#helpHeadingThree.card-header.collapsed(data-toggle='collapse', data-target='#helpCollapseThree', aria-expanded='true', aria-controls='helpCollapseThree', href='javascript:void(0);')
+                                    .accordion-faq-item-heading
+                                        | Estou terminando o ensino médio agora. Faz sentido entrar na academia do programador antes de começar a faculdade?
+                                        i(data-feather='chevron-down').accordion-faq-item-heading-arrow
+                                #helpCollapseThree.collapse(aria-labelledby='helpHeadingThree', data-parent='#helpAccordion')
+                                    .card-body.border-bottom
+                                        | Sim! Principalmente porque na faculdade os professores têm uma grande quantidade de conteúdo para ensinar em um intervalo pequeno de tempo. Então é importante você começar a faculdade já tendo dado os seus primeiros passos com programação.
+                            .card.accordion-faq-item
+                                a#helpHeadingThree.card-header.collapsed(data-toggle='collapse', data-target='#helpCollapseThree', aria-expanded='true', aria-controls='helpCollapseThree', href='javascript:void(0);')
+                                    .accordion-faq-item-heading
+                                        | E se eu tiver dúvidas durante o curso, como vou conseguir ajuda?
+                                        i(data-feather='chevron-down').accordion-faq-item-heading-arrow
+                                #helpCollapseThree.collapse(aria-labelledby='helpHeadingThree', data-parent='#helpAccordion')
+                                    .card-body.border-bottom
+                                        | Existe uma comunidade secreta dos alunos da { Academia do Programador } no Slack. Lá os alunos têm acesso direto ao professor e aos outros alunos. Além disso, toda semana tem a aula tira-dúvidas onde o professor responde as dúvidas dos alunos ao vivo.
+
+                    .col-xl-10.col-lg-10.text-center(data-aos='slide-up')
+                   
                         a.btn.btn-xl.btn-primary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=nc94kftr&checkoutMode=10&split=12&bid=1589319974564") Sim, quero me tornar um programador!
                         //- a.btn.btn-xl.btn-primary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=fplj7erg&checkoutMode=10&split=12&bid=1589319974564") Sim, quero me tornar um programador!
-                   
-
-
-
-
-    //- include mixins/header.pug
-    //- +header({
-    //-     pageHeaderBg: 'bg-light',
-    //-     pageHeaderStyle: 'page-header-light',
-    //-     svgBorderAngled: false,
-    //-     svgBorderRounded: true,
-    //-     svgBorderWaves: false,
-    //-     svgBorderFill: 'text-dark'
-    //- })
-
-
-    //-     .page-header-content
-    //-         .container
-    //-             .row.justify-content-center
-    //-                 .col-xl-8.col-lg-10.text-center(data-aos='slide-up')
-    //-                     h1.page-header-title Tire todas as suas dúvidas
-
-    //-                 .col-xl-10.col-lg-10
-
-                        
-
-
-
                         
 
      
