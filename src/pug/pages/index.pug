@@ -403,9 +403,9 @@ block content
     })
 
         .page-header-content.mb-n5
-            .container
+            .container(data-aos='fade')
                 .row.justify-content-center
-                    .col-xl-9.col-lg-10.text-center(data-aos='fade')
+                    .col-xl-9.col-lg-10.text-center
                         
                         h1.page-header-title.title Inscrições encerradas!
                         h2.page-header-text As inscrições para a { Academia do Programador } estão fechadas neste momento.
@@ -418,7 +418,7 @@ block content
                     .col-lg-6
                         .card.rounded-lg.text-dark
                             .card-header.py-4
-                                | Deixe seu e-mail que te lembro quando abrirmos novas vagas
+                                | Deixe seu e-mail que te lembraremos quando abrirmos novas vagas
                             .card-body
                                 form(method="POST" action="https://mautic.dicasdeprogramacao.com.br/form/submit?formId=4" autocomplete="false" role="form" id="mauticform_listadeespera" data-mautic-form="listadeespera" enctype="multipart/form-data")
                                     .form-group
@@ -440,10 +440,10 @@ block content
     +header({
         pageHeaderBg: 'bg-light',
         pageHeaderStyle: 'page-header-light',
-        svgBorderAngled: false,
+        svgBorderAngled: true,
         svgBorderRounded: false,
-        svgBorderWaves: true,
-        svgBorderFill: 'text-dark'
+        svgBorderWaves: false,
+        svgBorderFill: 'text-white'
     })
 
         .page-header-content
@@ -471,7 +471,7 @@ block content
         .page-header-content
             .container
                 .row.justify-content-center
-                    .col-xl-8.col-lg-10.text-center(data-aos='slide-left')
+                    .col-xl-8.col-lg-10.text-center(data-aos='slide-up')
                         h1.page-header-title Conheça o instrutor!
                         img.avatar-lp(src='/assets/img/foto-gustavo.jpg')
                         p.page-header-text.mb-5 <strong>Gustavo Furtado</strong> é Mestre em Computação Aplicada, Engenheiro da Computação, criador do blog { Dicas de Programação } por onde já passaram mais de 3 milhões de pessoas, em sua maioria iniciantes em programação.
