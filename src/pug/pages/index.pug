@@ -2,7 +2,8 @@ extends ../layouts/default.pug
 
 block config
 
-    - var pageTitle = 'Inscrições Abertas! - { Academia do Programador }'
+    //- - var pageTitle = 'Inscrições Abertas! - { Academia do Programador }'
+    - var pageTitle = 'Inscrições Encerradas! - { Academia do Programador }'
 
 append css
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css')
@@ -62,8 +63,8 @@ append css
                 font-size: 1.5rem !important;
             }
         }
-    meta(property="og:image" content="https://academiadoprogramador.com.br/inscricoes-abertas.png")
-    meta(property="og:description" content="As inscrições para a { Academia do Programador } estão abertas. Não perca esta oportunidade!")
+    //- meta(property="og:image" content="https://academiadoprogramador.com.br/inscricoes-abertas.png")
+    //- meta(property="og:description" content="As inscrições para a { Academia do Programador } estão abertas. Não perca esta oportunidade!")
 
 block content
 
@@ -71,13 +72,333 @@ block content
     //- * * Page Header * *
     //- * * * * * * * * * *
 
+    //- include mixins/header.pug
+    //- +header({
+    //-     pageHeaderBg: 'bg-gradient-primary-to-secondary',
+    //-     pageHeaderStyle: 'page-header-dark',
+    //-     svgBorderAngled: false,
+    //-     svgBorderRounded: false,
+    //-     svgBorderWaves: true,
+    //-     svgBorderFill: 'text-light'
+    //- })
+
+    //-     .page-header-content.mb-n5
+    //-         .container
+    //-             .row.justify-content-center
+    //-                 .col-xl-9.col-lg-10.text-center(data-aos='fade')
+    //-                     h2.page-header-text As inscrições terminam em ...
+    //-                     img.timer(src="https://s.mmgo.io/t/BwhM/scale_3x")
+                        
+    //-                     h1.page-header-title.title Inscrições abertas para a <br/>{ Academia do Programador }
+    //-                     h2.page-header-text Torne-se um programador profissional em até seis meses e seja disputado pelo mercado, mesmo que você nunca tenha feito um algorítmo na vida.
+
+    //-                     .video
+    //-                         .video-container
+    //-                             iframe(width="100%" height="450" src="https://www.youtube.com/embed/75d64cyJk3c?autoplay=1&amp;rel=0&amp;showinfo=0&amp;enablejsapi=1&amp;modestbranding=1&amp;nologo=1&amp;theme=light&amp;wmode=opaque&amp;iv_load_policy=3" frameborder="0" allowfullscreen="")
+
+    //-                     a.btn.btn-xl.btn-secondary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=nc94kftr&checkoutMode=10&split=12&bid=1589319974564") Sim, vou garantir a minha vaga!
+    //-                     //- a.btn.btn-xl.btn-secondary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=fplj7erg&checkoutMode=10&split=12&bid=1589319974564") Sim, vou garantir a minha vaga COM DESCONTO!
+
+
+    //- include mixins/header.pug
+    //- +header({
+    //-     pageHeaderBg: 'bg-light',
+    //-     pageHeaderStyle: 'page-header-light',
+    //-     svgBorderAngled: false,
+    //-     svgBorderRounded: false,
+    //-     svgBorderWaves: true,
+    //-     svgBorderFill: 'text-dark'
+    //- })
+
+    //-     .page-header-content
+    //-         .container
+    //-             .row.justify-content-center
+    //-                 .col-xl-8.col-lg-10.text-center(data-aos='slide-left')
+    //-                     h1.page-header-title A jornada que iremos trilhar!
+                        
+    //-                 .col-xl-12.col-lg-12.text-center(data-aos='slide-right')
+    //-                     img(src="assets/img/rota-do-programador.png" width="100%")
+
+
+
+    //- include mixins/header.pug
+    //- +header({
+    //-     pageHeaderBg: 'bg-dark',
+    //-     pageHeaderStyle: 'page-header-dark',
+    //-     svgBorderAngled: false,
+    //-     svgBorderRounded: true,
+    //-     svgBorderWaves: false,
+    //-     svgBorderFill: 'text-light'
+    //- })
+
+    //-     .page-header-content
+    //-         .container
+    //-             .row.justify-content-center
+    //-                 .col-xl-8.col-lg-10.text-center(data-aos='slide-up')
+    //-                     h1.page-header-title Mas cadê aquelas linguagens difíceis?
+
+    //-                 .col-xl-8.col-lg-10(data-aos='slide-up')
+
+    //-                     p.page-header-text Você pode até achar que precisaria aprender várias linguagens de programação, como: C, C++, Java, C#, PHP, Assembly, estruturas de dados complexas, padrões de projetos, arquitetura, etc.
+
+    //-                     p.page-header-text Se você tem esse pensamento, sinto muito, dificilmente você se tornará um programador mesmo. Pois você ficará cada vez mais perdido e não conseguirá trilhar um caminho claro para se tornar um programador.
+
+    //-                     p.page-header-text Mas se você quer um caminho otimizado que torna possível você se tornar um programador apto a conseguir um emprego no mercado de trabalho, você precisa aprender a dar um passo de cada vez.
+
+    //-                     p.page-header-text Você será capaz de sair do ZERO e se tornar um programador profissional no menor tempo se utilizar a rota que vamos trilhar, em um ambiente de comunidade onde todos se ajudam e o suporte que você vai receber durante a { Academia do Programador }.
+
+    //-                     p.page-header-text Depois que você construir uma base sólida, você pode até aprender as outras linguagens, frameworks, e as coisa da moda. Mas esquece isso no início da sua jornada. 😉
+
+
+
+    //- include mixins/header.pug
+    //- +header({
+    //-     pageHeaderBg: 'bg-light',
+    //-     pageHeaderStyle: 'page-header-light',
+    //-     svgBorderAngled: true,
+    //-     svgBorderRounded: false,
+    //-     svgBorderWaves: false,
+    //-     svgBorderFill: 'text-dark'
+    //- })
+
+    //-     .page-header-content.mb-n5
+    //-         .container
+    //-             .row.justify-content-center
+    //-                 .col-xl-9.col-lg-10.text-center(data-aos='fade')
+                        
+    //-                     h1.page-header-title.title A { Academia do Programador } vai te destravar!
+    //-                     h2.page-header-text Veja o que o Maurício e o Marcelo estão achando da { Academia do Programdor }.
+
+
+    //-                 .col-xl-6.col-lg-6(data-aos='fade')
+    //-                     .video
+    //-                         .video-container
+    //-                             iframe(width="100%" height="450" src="https://player.vimeo.com/video/436121457" frameborder="0" allowfullscreen="")
+
+    //-                 .col-xl-6.col-lg-6
+    //-                     .video
+    //-                         .video-container
+    //-                             iframe(width="100%" height="450" src="https://player.vimeo.com/video/436121324" frameborder="0" allowfullscreen="")
+
+    //-             .row.justify-content-center(style="padding-top: 2rem;")
+    //-                 .col-xl-9.col-lg-10.text-center
+                    
+    //-                     h2.page-header-text Últimas horas para conseguir a sua vaga ...
+    //-                     img.timer(src="https://s.mmgo.io/t/BwhN/scale_2x")
+
+    //-                     a.btn.btn-xl.btn-secondary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=nc94kftr&checkoutMode=10&split=12&bid=1589319974564") Sim, vou garantir a minha vaga AGORA!
+    //-                     //- a.btn.btn-xl.btn-secondary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=fplj7erg&checkoutMode=10&split=12&bid=1589319974564") Sim, vou garantir a minha vaga COM DESCONTO!
+                        
+
+    //- include mixins/header.pug
+    //- +header({
+    //-     pageHeaderBg: 'bg-dark',
+    //-     pageHeaderStyle: 'page-header-dark',
+    //-     svgBorderAngled: false,
+    //-     svgBorderRounded: true,
+    //-     svgBorderWaves: false,
+    //-     svgBorderFill: 'text-white'
+    //- })
+
+    //-     .page-header-content
+    //-         .container
+    //-             .row.justify-content-center
+    //-                 .col-xl-8.col-lg-10.text-center(data-aos='slide-up')
+    //-                     h1.page-header-title Conheça toda a Jornada ...
+
+    //-                 .col-xl-12.col-lg-12.text-center(data-aos='fade-up')
+    //-                     img(src="assets/img/modulos-do-curso.png" width="100%")
+
+
+
+
+
+
+    //- include mixins/header.pug
+    //- +header({
+    //-     pageHeaderBg: 'bg-white',
+    //-     pageHeaderStyle: 'page-header-white',
+    //-     svgBorderAngled: false,
+    //-     svgBorderRounded: false,
+    //-     svgBorderWaves: false,
+    //-     svgBorderFill: ''
+    //- })
+
+    //-     .page-header-content
+    //-         .container
+    //-             .row.justify-content-center
+    //-                 .col-xl-8.col-lg-10.text-center(data-aos='slide-up')
+    //-                     h1.page-header-title Você não vai trilhar este caminho sozinho!
+
+    //-             .row
+    //-                 .col-lg-4.col-md-6.mb-5(data-aos='fade-up')
+    //-                     a.card.text-center.text-decoration-none.h-100.lift(href='#!')
+    //-                         .card-body.py-5
+    //-                             .icon-stack.icon-stack-lg.bg-green-soft.text-green.mb-4
+    //-                                 i(data-feather='help-circle')
+    //-                             h5 Aula tira-dúvidas TODA SEMANA
+    //-                             p.card-text Toda semana você terá acesso a uma aula tira-dúvidas para você não ficar travado em nenhum ponto da jornada.
+    //-                 .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='100')
+    //-                     a.card.text-center.text-decoration-none.h-100.lift(href='#!')
+    //-                         .card-body.py-5
+    //-                             .icon-stack.icon-stack-lg.bg-red-soft.text-red.mb-4
+    //-                                 i(data-feather='slack')
+    //-                             h5 Comunidade de alunos no Slack
+    //-                             p.card-text Uma comunidade de alunos que estão no mesmo barco que você. "Se quer ir longe vá acompanhado"
+    //-                 .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='150')
+    //-                     a.card.text-center.text-decoration-none.h-100.lift(href='#!')
+    //-                         .card-body.py-5
+    //-                             .icon-stack.icon-stack-lg.bg-yellow-soft.text-yellow.mb-4
+    //-                                 i(data-feather='map')
+    //-                             h5 Acompanhamento individual
+    //-                             p.card-text Você terá um acompanhamento individual do seu progresso. Assim você não ficará disperso e saberá exatamente o único próximo passo.
+    //-                 .col-lg-4.col-md-6.mb-5.mb-lg-0(data-aos='fade-up')
+    //-                     a.card.text-center.text-decoration-none.h-100.lift(href='#!')
+    //-                         .card-body.py-5
+    //-                             .icon-stack.icon-stack-lg.bg-purple-soft.text-purple.mb-4
+    //-                                 i(data-feather='user-check')
+    //-                             h5 Consultoria individual
+    //-                             p.card-text Você terá direito a no mínimo 1 hora de consultoria individual com o professor pra você perguntar o que quiser.
+    //-                 .col-lg-4.col-md-6.mb-5.mb-md-0(data-aos='fade-up', data-aos-delay='100')
+    //-                     a.card.text-center.text-decoration-none.h-100.lift(href='#!')
+    //-                         .card-body.py-5
+    //-                             .icon-stack.icon-stack-lg.bg-blue-soft.text-blue.mb-4
+    //-                                 i(data-feather='award')
+    //-                             h5 Certificado
+    //-                             p.card-text Ao final do curso você receberá um certificado de conclusão, comprovando que você trilho toda a jornada.
+    //-                 .col-lg-4.col-md-6(data-aos='fade-up', data-aos-delay='150')
+    //-                     a.card.text-center.text-decoration-none.h-100.lift(href='#!')
+    //-                         .card-body.py-5
+    //-                             .icon-stack.icon-stack-lg.bg-orange-soft.text-orange.mb-4
+    //-                                 i(data-feather='package')
+    //-                             h5 Acesso vitalício
+    //-                             p.card-text Você terá acesso vitalício ao material da Academia do Programador
+    //-                             i.text-orange(data-feather='alert-triangle')
+    //-                             p.card-text.small.text-orange Somente para esta turma!
+
+    //-             .row.justify-content-center(style="padding-top: 2rem;")
+    //-                 .col-xl-9.col-lg-10.text-center
+                    
+    //-                     h2.page-header-text Últimas horas para conseguir a sua vaga...
+    //-                     img.timer(src="https://s.mmgo.io/t/BwhN/scale_2x")
+
+    //-                     a.btn.btn-xl.btn-secondary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=nc94kftr&checkoutMode=10&split=12&bid=1589319974564") Sim, quero me tornar um programador!
+    //-                     //- a.btn.btn-xl.btn-primary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=fplj7erg&checkoutMode=10&split=12&bid=1589319974564") Sim, quero me tornar um programador!
+                
+
+
+
+
+
+    //- include mixins/header.pug
+    //- +header({
+    //-     pageHeaderBg: 'bg-gradient-primary-to-secondary',
+    //-     pageHeaderStyle: 'page-header-dark',
+    //-     svgBorderAngled: false,
+    //-     svgBorderRounded: false,
+    //-     svgBorderWaves: true,
+    //-     svgBorderFill: 'text-light'
+    //- })
+
+    //-     .page-header-content
+    //-         .container
+    //-             .row.justify-content-center
+    //-                 .col-xl-8.col-lg-10.text-center(data-aos='slide-left')
+    //-                     h1.page-header-title Conheça o instrutor!
+    //-                     img.avatar-lp(src='/assets/img/foto-gustavo.jpg')
+    //-                     p.page-header-text.mb-5 <strong>Gustavo Furtado</strong> é Mestre em Computação Aplicada, Engenheiro da Computação, criador do blog { Dicas de Programação } por onde já passaram mais de 3 milhões de pessoas, em sua maioria iniciantes em programação.
+    //-                     p.page-header-text.mb-5 Tem mais de 15 anos de experiência como desenvolvedor de softwares, tendo trabalhado com diversas linguagens de programação, frameworks, tecnicas e metodologias.
+                        
+
+
+
+
+    //- include mixins/header.pug
+    //- +header({
+    //-     pageHeaderBg: 'bg-light',
+    //-     pageHeaderStyle: 'page-header-light',
+    //-     svgBorderAngled: false,
+    //-     svgBorderRounded: true,
+    //-     svgBorderWaves: false,
+    //-     svgBorderFill: 'text-dark'
+    //- })
+
+
+    //-     .page-header-content
+    //-         .container
+    //-             .row.justify-content-center
+    //-                 .col-xl-8.col-lg-10.text-center(data-aos='slide-up')
+    //-                     h1.page-header-title Dúvidas frequentes
+
+
+    //-             .row.justify-content-center   
+    //-                 .col-xl-8.col-lg-10.text-center(data-aos='slide-up')                       
+    //-                     #helpAccordion.accordion.accordion-faq.mb-5
+    //-                         .card.accordion-faq-item
+    //-                             a#helpHeadingOne.card-header(data-toggle='collapse', data-target='#helpCollapseOne', aria-expanded='true', aria-controls='helpCollapseOne', href='javascript:void(0);')
+    //-                                 .accordion-faq-item-heading
+    //-                                     | Porque linguagens como C, Java, Python, C++, PHP, C#, etc. não estão na rota?
+    //-                                     i(data-feather='chevron-down').accordion-faq-item-heading-arrow
+    //-                             #helpCollapseOne.collapse.show(aria-labelledby='helpHeadingOne', data-parent='#helpAccordion')
+    //-                                 .card-body.border-bottom
+    //-                                     | Porque você precisa de foco para criar uma base sólida como programador, para aí sim estar apto a aprender qualquer uma dessas linguagens ou frameworks.
+    //-                         .card.accordion-faq-item
+    //-                             a#helpHeadingTwo.card-header.collapsed(data-toggle='collapse', data-target='#helpCollapseTwo', aria-expanded='true', aria-controls='helpCollapseTwo', href='javascript:void(0);')
+    //-                                 .accordion-faq-item-heading
+    //-                                     | Tenho mais de 50 anos. A { Academia do Programador } serve pra mim?
+    //-                                     i(data-feather='chevron-down').accordion-faq-item-heading-arrow
+    //-                             #helpCollapseTwo.collapse(aria-labelledby='helpHeadingTwo', data-parent='#helpAccordion')
+    //-                                 .card-body.border-bottom
+    //-                                     | Com certeza! É justamente porque você tem mais de 50 anos que você deve aprender programação seguindo os passos da academia do programador, pois você não tem mais tempo à perder se dispersando com todo o conteúdo disponível na internet.
+    //-                         .card.accordion-faq-item
+    //-                             a#helpHeadingThree.card-header.collapsed(data-toggle='collapse', data-target='#helpCollapseThree', aria-expanded='true', aria-controls='helpCollapseThree', href='javascript:void(0);')
+    //-                                 .accordion-faq-item-heading
+    //-                                     | Estou terminando o ensino médio agora. Faz sentido entrar na academia do programador antes de começar a faculdade?
+    //-                                     i(data-feather='chevron-down').accordion-faq-item-heading-arrow
+    //-                             #helpCollapseThree.collapse(aria-labelledby='helpHeadingThree', data-parent='#helpAccordion')
+    //-                                 .card-body.border-bottom
+    //-                                     | Sim! Principalmente porque na faculdade os professores têm uma grande quantidade de conteúdo para ensinar em um intervalo pequeno de tempo. Então é importante você começar a faculdade já tendo dado os seus primeiros passos com programação.
+    //-                         .card.accordion-faq-item
+    //-                             a#helpHeadingThree.card-header.collapsed(data-toggle='collapse', data-target='#helpCollapseThree', aria-expanded='true', aria-controls='helpCollapseThree', href='javascript:void(0);')
+    //-                                 .accordion-faq-item-heading
+    //-                                     | E se eu tiver dúvidas durante o curso, como vou conseguir ajuda?
+    //-                                     i(data-feather='chevron-down').accordion-faq-item-heading-arrow
+    //-                             #helpCollapseThree.collapse(aria-labelledby='helpHeadingThree', data-parent='#helpAccordion')
+    //-                                 .card-body.border-bottom
+    //-                                     | Existe uma comunidade secreta dos alunos da { Academia do Programador } no Slack. Lá os alunos têm acesso direto ao professor e aos outros alunos. Além disso, toda semana tem a aula tira-dúvidas onde o professor responde as dúvidas dos alunos ao vivo.
+
+    //-                 .col-xl-10.col-lg-10.text-center(data-aos='slide-up')
+                   
+    //-                     h2.page-header-text As inscrições vão se encerrar em...
+    //-                     img.timer(src="https://s.mmgo.io/t/BwhN/scale_2x")
+
+    //-                     a.btn.btn-xl.btn-primary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=nc94kftr&checkoutMode=10&split=12&bid=1589319974564") Sim, quero me tornar um programador!
+    //-                     //- a.btn.btn-xl.btn-primary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=fplj7erg&checkoutMode=10&split=12&bid=1589319974564") Sim, quero me tornar um programador!
+                        
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     include mixins/header.pug
     +header({
         pageHeaderBg: 'bg-gradient-primary-to-secondary',
         pageHeaderStyle: 'page-header-dark',
         svgBorderAngled: false,
-        svgBorderRounded: false,
-        svgBorderWaves: true,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
         svgBorderFill: 'text-light'
     })
 
@@ -85,18 +406,34 @@ block content
             .container
                 .row.justify-content-center
                     .col-xl-9.col-lg-10.text-center(data-aos='fade')
-                        h2.page-header-text As inscrições terminam em ...
-                        img.timer(src="https://s.mmgo.io/t/BwhM/scale_3x")
                         
-                        h1.page-header-title.title Inscrições abertas para a <br/>{ Academia do Programador }
-                        h2.page-header-text Torne-se um programador profissional em até seis meses e seja disputado pelo mercado, mesmo que você nunca tenha feito um algorítmo na vida.
+                        h1.page-header-title.title Inscrições encerradas!
+                        h2.page-header-text As inscrições para a { Academia do Programador } estão fechadas neste momento.
 
-                        .video
-                            .video-container
-                                iframe(width="100%" height="450" src="https://www.youtube.com/embed/75d64cyJk3c?autoplay=1&amp;rel=0&amp;showinfo=0&amp;enablejsapi=1&amp;modestbranding=1&amp;nologo=1&amp;theme=light&amp;wmode=opaque&amp;iv_load_policy=3" frameborder="0" allowfullscreen="")
+                        img(src="assets/img/logo-academia-do-programador-fundo-transparente.png" style="max-width=100%")
 
-                        a.btn.btn-xl.btn-secondary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=nc94kftr&checkoutMode=10&split=12&bid=1589319974564") Sim, vou garantir a minha vaga!
-                        //- a.btn.btn-xl.btn-secondary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=fplj7erg&checkoutMode=10&split=12&bid=1589319974564") Sim, vou garantir a minha vaga COM DESCONTO!
+                .row.align-items-center
+                    .col-lg-6
+                        h1.page-header-title Seja avisado quando as vagas forem abertas novamente.
+                    .col-lg-6
+                        .card.rounded-lg.text-dark
+                            .card-header.py-4
+                                | Deixe seu e-mail que te lembro quando abrirmos novas vagas
+                            .card-body
+                                form(method="POST" action="https://mautic.dicasdeprogramacao.com.br/form/submit?formId=4" autocomplete="false" role="form" id="mauticform_listadeespera" data-mautic-form="listadeespera" enctype="multipart/form-data")
+                                    .form-group
+                                        label.small.text-gray-600(for='mauticform_input_listadeespera_email') E-mail
+                                        input#mauticform_input_listadeespera_email.form-control.rounded-pill(type='email' name='mauticform[email]' placeholder="Digite seu melhor e-mail aqui." required)
+                                    .form-group
+                                        input(type="hidden" name="mauticform[formId]" id="mauticform_listadeespera_id" value="4")
+                                        input(type="hidden" name="mauticform[return]" id="mauticform_listadeespera_return" value="")
+                                        input(type="hidden" name="mauticform[formName]" id="mauticform_listadeespera_name" value="listadeespera")
+
+                                    button.btn.btn-primary.btn-marketing.btn-block.rounded-pill.mt-4(type='submit' name="mauticform[submit]") Sim, quero ser lembrado!
+
+                
+
+
 
 
     include mixins/header.pug
@@ -113,102 +450,10 @@ block content
             .container
                 .row.justify-content-center
                     .col-xl-8.col-lg-10.text-center(data-aos='slide-left')
-                        h1.page-header-title A jornada que iremos trilhar!
+                        h1.page-header-title A jornada que estamos trilhando!
                         
                     .col-xl-12.col-lg-12.text-center(data-aos='slide-right')
                         img(src="assets/img/rota-do-programador.png" width="100%")
-
-
-
-    include mixins/header.pug
-    +header({
-        pageHeaderBg: 'bg-dark',
-        pageHeaderStyle: 'page-header-dark',
-        svgBorderAngled: false,
-        svgBorderRounded: true,
-        svgBorderWaves: false,
-        svgBorderFill: 'text-light'
-    })
-
-        .page-header-content
-            .container
-                .row.justify-content-center
-                    .col-xl-8.col-lg-10.text-center(data-aos='slide-up')
-                        h1.page-header-title Mas cadê aquelas linguagens difíceis?
-
-                    .col-xl-8.col-lg-10(data-aos='slide-up')
-
-                        p.page-header-text Você pode até achar que precisaria aprender várias linguagens de programação, como: C, C++, Java, C#, PHP, Assembly, estruturas de dados complexas, padrões de projetos, arquitetura, etc.
-
-                        p.page-header-text Se você tem esse pensamento, sinto muito, dificilmente você se tornará um programador mesmo. Pois você ficará cada vez mais perdido e não conseguirá trilhar um caminho claro para se tornar um programador.
-
-                        p.page-header-text Mas se você quer um caminho otimizado que torna possível você se tornar um programador apto a conseguir um emprego no mercado de trabalho, você precisa aprender a dar um passo de cada vez.
-
-                        p.page-header-text Você será capaz de sair do ZERO e se tornar um programador profissional no menor tempo se utilizar a rota que vamos trilhar, em um ambiente de comunidade onde todos se ajudam e o suporte que você vai receber durante a { Academia do Programador }.
-
-                        p.page-header-text Depois que você construir uma base sólida, você pode até aprender as outras linguagens, frameworks, e as coisa da moda. Mas esquece isso no início da sua jornada. 😉
-
-
-
-    include mixins/header.pug
-    +header({
-        pageHeaderBg: 'bg-light',
-        pageHeaderStyle: 'page-header-light',
-        svgBorderAngled: true,
-        svgBorderRounded: false,
-        svgBorderWaves: false,
-        svgBorderFill: 'text-dark'
-    })
-
-        .page-header-content.mb-n5
-            .container
-                .row.justify-content-center
-                    .col-xl-9.col-lg-10.text-center(data-aos='fade')
-                        
-                        h1.page-header-title.title A { Academia do Programador } vai te destravar!
-                        h2.page-header-text Veja o que o Maurício e o Marcelo estão achando da { Academia do Programdor }.
-
-
-                    .col-xl-6.col-lg-6(data-aos='fade')
-                        .video
-                            .video-container
-                                iframe(width="100%" height="450" src="https://player.vimeo.com/video/436121457" frameborder="0" allowfullscreen="")
-
-                    .col-xl-6.col-lg-6
-                        .video
-                            .video-container
-                                iframe(width="100%" height="450" src="https://player.vimeo.com/video/436121324" frameborder="0" allowfullscreen="")
-
-                .row.justify-content-center(style="padding-top: 2rem;")
-                    .col-xl-9.col-lg-10.text-center
-                    
-                        h2.page-header-text Últimas horas para conseguir a sua vaga ...
-                        img.timer(src="https://s.mmgo.io/t/BwhN/scale_2x")
-
-                        a.btn.btn-xl.btn-secondary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=nc94kftr&checkoutMode=10&split=12&bid=1589319974564") Sim, vou garantir a minha vaga AGORA!
-                        //- a.btn.btn-xl.btn-secondary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=fplj7erg&checkoutMode=10&split=12&bid=1589319974564") Sim, vou garantir a minha vaga COM DESCONTO!
-                        
-
-    include mixins/header.pug
-    +header({
-        pageHeaderBg: 'bg-dark',
-        pageHeaderStyle: 'page-header-dark',
-        svgBorderAngled: false,
-        svgBorderRounded: true,
-        svgBorderWaves: false,
-        svgBorderFill: 'text-white'
-    })
-
-        .page-header-content
-            .container
-                .row.justify-content-center
-                    .col-xl-8.col-lg-10.text-center(data-aos='slide-up')
-                        h1.page-header-title Conheça toda a Jornada ...
-
-                    .col-xl-12.col-lg-12.text-center(data-aos='fade-up')
-                        img(src="assets/img/modulos-do-curso.png" width="100%")
-
-
 
 
 
@@ -219,84 +464,8 @@ block content
         pageHeaderStyle: 'page-header-white',
         svgBorderAngled: false,
         svgBorderRounded: false,
-        svgBorderWaves: false,
-        svgBorderFill: ''
-    })
-
-        .page-header-content
-            .container
-                .row.justify-content-center
-                    .col-xl-8.col-lg-10.text-center(data-aos='slide-up')
-                        h1.page-header-title Você não vai trilhar este caminho sozinho!
-
-                .row
-                    .col-lg-4.col-md-6.mb-5(data-aos='fade-up')
-                        a.card.text-center.text-decoration-none.h-100.lift(href='#!')
-                            .card-body.py-5
-                                .icon-stack.icon-stack-lg.bg-green-soft.text-green.mb-4
-                                    i(data-feather='help-circle')
-                                h5 Aula tira-dúvidas TODA SEMANA
-                                p.card-text Toda semana você terá acesso a uma aula tira-dúvidas para você não ficar travado em nenhum ponto da jornada.
-                    .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='100')
-                        a.card.text-center.text-decoration-none.h-100.lift(href='#!')
-                            .card-body.py-5
-                                .icon-stack.icon-stack-lg.bg-red-soft.text-red.mb-4
-                                    i(data-feather='slack')
-                                h5 Comunidade de alunos no Slack
-                                p.card-text Uma comunidade de alunos que estão no mesmo barco que você. "Se quer ir longe vá acompanhado"
-                    .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='150')
-                        a.card.text-center.text-decoration-none.h-100.lift(href='#!')
-                            .card-body.py-5
-                                .icon-stack.icon-stack-lg.bg-yellow-soft.text-yellow.mb-4
-                                    i(data-feather='map')
-                                h5 Acompanhamento individual
-                                p.card-text Você terá um acompanhamento individual do seu progresso. Assim você não ficará disperso e saberá exatamente o único próximo passo.
-                    .col-lg-4.col-md-6.mb-5.mb-lg-0(data-aos='fade-up')
-                        a.card.text-center.text-decoration-none.h-100.lift(href='#!')
-                            .card-body.py-5
-                                .icon-stack.icon-stack-lg.bg-purple-soft.text-purple.mb-4
-                                    i(data-feather='user-check')
-                                h5 Consultoria individual
-                                p.card-text Você terá direito a no mínimo 1 hora de consultoria individual com o professor pra você perguntar o que quiser.
-                    .col-lg-4.col-md-6.mb-5.mb-md-0(data-aos='fade-up', data-aos-delay='100')
-                        a.card.text-center.text-decoration-none.h-100.lift(href='#!')
-                            .card-body.py-5
-                                .icon-stack.icon-stack-lg.bg-blue-soft.text-blue.mb-4
-                                    i(data-feather='award')
-                                h5 Certificado
-                                p.card-text Ao final do curso você receberá um certificado de conclusão, comprovando que você trilho toda a jornada.
-                    .col-lg-4.col-md-6(data-aos='fade-up', data-aos-delay='150')
-                        a.card.text-center.text-decoration-none.h-100.lift(href='#!')
-                            .card-body.py-5
-                                .icon-stack.icon-stack-lg.bg-orange-soft.text-orange.mb-4
-                                    i(data-feather='package')
-                                h5 Acesso vitalício
-                                p.card-text Você terá acesso vitalício ao material da Academia do Programador
-                                i.text-orange(data-feather='alert-triangle')
-                                p.card-text.small.text-orange Somente para esta turma!
-
-                .row.justify-content-center(style="padding-top: 2rem;")
-                    .col-xl-9.col-lg-10.text-center
-                    
-                        h2.page-header-text Últimas horas para conseguir a sua vaga...
-                        img.timer(src="https://s.mmgo.io/t/BwhN/scale_2x")
-
-                        a.btn.btn-xl.btn-secondary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=nc94kftr&checkoutMode=10&split=12&bid=1589319974564") Sim, quero me tornar um programador!
-                        //- a.btn.btn-xl.btn-primary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=fplj7erg&checkoutMode=10&split=12&bid=1589319974564") Sim, quero me tornar um programador!
-                
-
-
-
-
-
-    include mixins/header.pug
-    +header({
-        pageHeaderBg: 'bg-gradient-primary-to-secondary',
-        pageHeaderStyle: 'page-header-dark',
-        svgBorderAngled: false,
-        svgBorderRounded: false,
         svgBorderWaves: true,
-        svgBorderFill: 'text-light'
+        svgBorderFill: 'text-dark'
     })
 
         .page-header-content
@@ -311,74 +480,6 @@ block content
 
 
 
-
-    include mixins/header.pug
-    +header({
-        pageHeaderBg: 'bg-light',
-        pageHeaderStyle: 'page-header-light',
-        svgBorderAngled: false,
-        svgBorderRounded: true,
-        svgBorderWaves: false,
-        svgBorderFill: 'text-dark'
-    })
-
-
-        .page-header-content
-            .container
-                .row.justify-content-center
-                    .col-xl-8.col-lg-10.text-center(data-aos='slide-up')
-                        h1.page-header-title Dúvidas frequentes
-
-
-                .row.justify-content-center   
-                    .col-xl-8.col-lg-10.text-center(data-aos='slide-up')                       
-                        #helpAccordion.accordion.accordion-faq.mb-5
-                            .card.accordion-faq-item
-                                a#helpHeadingOne.card-header(data-toggle='collapse', data-target='#helpCollapseOne', aria-expanded='true', aria-controls='helpCollapseOne', href='javascript:void(0);')
-                                    .accordion-faq-item-heading
-                                        | Porque linguagens como C, Java, Python, C++, PHP, C#, etc. não estão na rota?
-                                        i(data-feather='chevron-down').accordion-faq-item-heading-arrow
-                                #helpCollapseOne.collapse.show(aria-labelledby='helpHeadingOne', data-parent='#helpAccordion')
-                                    .card-body.border-bottom
-                                        | Porque você precisa de foco para criar uma base sólida como programador, para aí sim estar apto a aprender qualquer uma dessas linguagens ou frameworks.
-                            .card.accordion-faq-item
-                                a#helpHeadingTwo.card-header.collapsed(data-toggle='collapse', data-target='#helpCollapseTwo', aria-expanded='true', aria-controls='helpCollapseTwo', href='javascript:void(0);')
-                                    .accordion-faq-item-heading
-                                        | Tenho mais de 50 anos. A { Academia do Programador } serve pra mim?
-                                        i(data-feather='chevron-down').accordion-faq-item-heading-arrow
-                                #helpCollapseTwo.collapse(aria-labelledby='helpHeadingTwo', data-parent='#helpAccordion')
-                                    .card-body.border-bottom
-                                        | Com certeza! É justamente porque você tem mais de 50 anos que você deve aprender programação seguindo os passos da academia do programador, pois você não tem mais tempo à perder se dispersando com todo o conteúdo disponível na internet.
-                            .card.accordion-faq-item
-                                a#helpHeadingThree.card-header.collapsed(data-toggle='collapse', data-target='#helpCollapseThree', aria-expanded='true', aria-controls='helpCollapseThree', href='javascript:void(0);')
-                                    .accordion-faq-item-heading
-                                        | Estou terminando o ensino médio agora. Faz sentido entrar na academia do programador antes de começar a faculdade?
-                                        i(data-feather='chevron-down').accordion-faq-item-heading-arrow
-                                #helpCollapseThree.collapse(aria-labelledby='helpHeadingThree', data-parent='#helpAccordion')
-                                    .card-body.border-bottom
-                                        | Sim! Principalmente porque na faculdade os professores têm uma grande quantidade de conteúdo para ensinar em um intervalo pequeno de tempo. Então é importante você começar a faculdade já tendo dado os seus primeiros passos com programação.
-                            .card.accordion-faq-item
-                                a#helpHeadingThree.card-header.collapsed(data-toggle='collapse', data-target='#helpCollapseThree', aria-expanded='true', aria-controls='helpCollapseThree', href='javascript:void(0);')
-                                    .accordion-faq-item-heading
-                                        | E se eu tiver dúvidas durante o curso, como vou conseguir ajuda?
-                                        i(data-feather='chevron-down').accordion-faq-item-heading-arrow
-                                #helpCollapseThree.collapse(aria-labelledby='helpHeadingThree', data-parent='#helpAccordion')
-                                    .card-body.border-bottom
-                                        | Existe uma comunidade secreta dos alunos da { Academia do Programador } no Slack. Lá os alunos têm acesso direto ao professor e aos outros alunos. Além disso, toda semana tem a aula tira-dúvidas onde o professor responde as dúvidas dos alunos ao vivo.
-
-                    .col-xl-10.col-lg-10.text-center(data-aos='slide-up')
-                   
-                        h2.page-header-text As inscrições vão se encerrar em...
-                        img.timer(src="https://s.mmgo.io/t/BwhN/scale_2x")
-
-                        a.btn.btn-xl.btn-primary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=nc94kftr&checkoutMode=10&split=12&bid=1589319974564") Sim, quero me tornar um programador!
-                        //- a.btn.btn-xl.btn-primary.btn-block.rounded-pill.mt-5(href="https://pay.hotmart.com/A5013488A?off=fplj7erg&checkoutMode=10&split=12&bid=1589319974564") Sim, quero me tornar um programador!
-                        
-
-     
-
-          
-                
 
 
 block footer
@@ -435,5 +536,5 @@ append scripts
         gtag('config', 'UA-171709654-1');
 
     //JivoChat
-    script(async, src="//code.jivosite.com/widget/PSW9chLIyg")
+    //- script(async, src="//code.jivosite.com/widget/PSW9chLIyg")
 
